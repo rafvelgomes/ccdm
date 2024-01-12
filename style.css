@@ -1,0 +1,278 @@
+body{
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+}
+.homePage{
+  width:99vw;
+  height:99vh;
+  position: sticky;
+  top:0;
+  overflow:hidden;
+}
+
+header{
+  font-family:'Roboto Mono', monospace;
+  font-weight: bold;
+  font-size: 12pt;
+  position: sticky;
+  top:0;
+  width: 90vw;
+  left: 5vw;
+  padding: 25px 50px 25px 50px;
+  z-index: 1;
+  background-color: #ffffff2a;
+  border-radius: 0 0 20px 20px;
+  opacity:0.5;
+}
+header a{
+  color: white;
+  text-decoration:none;
+  margin-right: 5vw;
+  position: relative;
+  right:0;
+}
+header.scrolled {
+  background-color: black;
+  opacity: 1;
+}
+header.scrolled a{
+  color:white;
+}
+#fundoCCDM{
+  width: 100%;
+  background-color: black;
+}
+#landingPage{
+  width:90vw;
+  height: 90vh;
+  top:5vh;
+  left:5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top:0;
+  z-index: -1;
+}
+
+#logoHome{
+  position:relative;
+  margin:50px;
+  height:50vh;
+  top:30%;
+  width:auto;
+  z-index: 1;
+}
+.orador{
+  display: flex;
+  flex-direction: row;
+  margin-top:7%;
+}
+
+#camila, #rejaine{
+  display: flex;
+  flex-direction: row;
+}
+#imgBraulio, #imgSusana{order:1;}
+  
+.orador img{
+  width:50vw;
+}
+.info{
+  padding:3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+}
+.dataNome, .roboto{
+  font-family:'Roboto Mono', monospace;
+  font-weight: bold
+}
+.data{
+  margin:0;
+  font-size:25pt;
+}
+.nome{
+  font-size: 50pt;
+  margin:0;
+  margin-bottom:57pt;
+}
+.intro, .deca{
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 14pt;
+  line-height:21pt;
+  margin:0;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+* {
+  scrollbar-color: #888 transparent;
+  scrollbar-width: thin;
+}
+#fundoCCDM{
+  width: 96vw;
+  padding-top:5vh;
+  background-color: black;
+  position:relative;
+  
+}
+.about{
+  display: flex;
+  flex-direction: row;
+}
+.sobreNos{
+  width:50vw;
+  margin:5vw;
+}
+.organizacao{
+  margin:5vw;
+}
+.designers{
+  margin:5vw;
+}
+.org{
+  display: flex;
+  flex-direction: column;
+}
+.contactos{
+  display:block;
+  margin:5vw; 
+  margin-top:0;
+  padding-bottom:5vw;
+}
+.programa{
+  background-color: black;
+  position: sticky;
+  top:-400%;
+}
+.ccdm{
+  position:relative;
+  left:10%;
+  background-color: white;
+  color:black;
+  width:80vw;
+  border-radius: 20px;
+  margin:5px;
+}
+#ciclo{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5vw;
+}
+#linha{
+  width:98vw;
+  position: absolute;
+  z-index: -1;
+  top:10%;
+}
+
+@media(max-width:1100px){
+  .orador img{
+    height:50vw;
+  }
+  #logoHome{
+    width: 50vw;
+    height:auto;
+  }
+  #linha{
+    position:sticky;
+    margin-bottom:-400px;
+  }
+}
+
+@media(max-width:900px){
+  .orador img{
+    margin-bottom:-100px;
+  }
+  #camila .dataNome, #rejaine .dataNome{
+    text-align:right;
+    position:relative;
+    width:80vw;
+  }
+  .intro{
+    width:80vw;
+  }
+  .ccdm{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-content:center;
+    position:relative;
+    left:0;
+  }
+  .about{
+    display:block;
+    width:80vw;
+    padding-left:4%;
+    padding-top:10%;
+  }
+  .sobreNos{
+    width:90%;
+  }
+  .contactos{
+    padding-left:4%;
+  }
+  #linha{
+    top:25vh;
+    width:150vw;
+  }
+
+
+  .orador, #braulio, #susana, #camila, #rejaine{
+    display:block;
+  }  
+  .nome{
+    font-size:36pt;
+    margin-top:20pt;
+    margin-bottom:36pt;
+  }
+  .data{
+    font-size:18pt;
+  }
+  #imgSusana, #imgBraulio{
+    position: relative;
+    left:40%;
+  }
+  #imgBraulio, #imgSusana, #imgRejaiine, #imgCamila{
+    position: relative;
+    width:60vw;
+    height:auto;
+  }
+  .info{
+    position:relative;
+    left:5vw;
+  }
+  .programa{
+    top:-500%;
+  }
+
+  @media (max-height:1000px){
+  #logoHome{
+    position:absolute;
+    width:60vw;
+    height:auto;
+  }
+    #linha{
+    position:absolute;
+     width:99vw;
+    }
+  }
+}
+
+@media (max-width:300px){
+  .orador img{
+    margin-bottom:0;
+  }
+}
